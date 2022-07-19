@@ -438,8 +438,8 @@ class TrialRunner:  # pylint: disable=too-many-instance-attributes
                 'experiment.runner.TrialRunner.archive_and_save_corpus')
     def archive_and_save_corpus(self):
         """Archive and save the current corpus to GCS."""
-        archive = self.archive_corpus()
-        self.save_corpus_archive(archive)
+        """archive = self.archive_corpus()
+        self.save_corpus_archive(archive)"""
 
     @retry.wrap(NUM_RETRIES, RETRY_DELAY,
                 'experiment.runner.TrialRunner.save_results')
